@@ -5,13 +5,13 @@ import pandas as pd
 class HealthInsurance( object ):
     
     def __init__( self ):
-        self.home_path = '/Users/raphael/Documents/repos/pa004/health_insurance_cross-sell/'
-        self.annual_premium_scaler =            pickle.load( open( self.home_path + 'src/features/annual_premium_scaler.pkl', 'rb' ) )
-        self.age_scaler =                       pickle.load( open( self.home_path + 'src/features/age_scaler.pkl', 'rb' ) ) 
-        self.vintage_scaler =                   pickle.load( open( self.home_path + 'src/features/vintage_scaler.pkl', 'rb' ) ) 
-        self.target_encode_gender_scaler =      pickle.load( open( self.home_path + 'src/features/target_encode_gender_scaler.pkl', 'rb' ) )
-        self.target_encode_region_code_scaler = pickle.load( open( self.home_path + 'src/features/target_encode_region_code_scaler.pkl', 'rb' ) )
-        self.fe_policy_sales_channel_scaler =   pickle.load( open( self.home_path + 'src/features/fe_policy_sales_channel_scaler.pkl', 'rb' ) )
+        self.home_path = ''
+        self.annual_premium_scaler =            pickle.load( open( self.home_path + 'parameter/annual_premium_scaler.pkl', 'rb' ) )
+        self.age_scaler =                       pickle.load( open( self.home_path + 'parameter/age_scaler.pkl', 'rb' ) ) 
+        self.vintage_scaler =                   pickle.load( open( self.home_path + 'parameter/vintage_scaler.pkl', 'rb' ) ) 
+        self.target_encode_gender_scaler =      pickle.load( open( self.home_path + 'parameter/target_encode_gender_scaler.pkl', 'rb' ) )
+        self.target_encode_region_code_scaler = pickle.load( open( self.home_path + 'parameter/target_encode_region_code_scaler.pkl', 'rb' ) )
+        self.fe_policy_sales_channel_scaler =   pickle.load( open( self.home_path + 'parameter/fe_policy_sales_channel_scaler.pkl', 'rb' ) )
         
     def data_cleaning( self, df1 ):
         # 1.1. Rename Columns
