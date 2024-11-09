@@ -4,13 +4,10 @@ from flask import Flask, request, Response
 import sys
 import os
 
-path_to_model = ''
-sys.path.append(path_to_model)
-
-from healthinsurance.HealthInsurance import HealthInsurance
+from health_insurance.HealthInsurance import HealthInsurance
 
 # loading model
-model = pickle.load(open(os.path.join(path_to_model, 'model/model_linear_regression.pkl'), 'rb'))
+model = pickle.load(open('model/model_linear_regression.pkl', 'rb'))
 
 # initialize API
 app = Flask(__name__)
