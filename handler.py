@@ -4,13 +4,10 @@ from flask import Flask, request, Response
 import sys
 import os
 
-path_to_src = '/Users/raphael/Documents/repos/pa004/health_insurance_cross-sell/src'
-sys.path.append(path_to_src)
-
 from healthinsurance.HealthInsurance import HealthInsurance
 
 # loading model
-model = pickle.load(open(os.path.join(path_to_src, 'models/model_health_insurance.pkl'), 'rb'))
+model = pickle.load(open('model/model_linear_regression.pkl', 'rb'))
 
 # initialize API
 app = Flask(__name__)
@@ -47,4 +44,5 @@ def health_insurance_predict():
 
     
 if __name__ == '__main__':
-    app.run('0.0.0.0', debug=True)
+    port = os.environ.get('PORT', 5000)
+    app.run(host='0.0.0.0', port=port)
