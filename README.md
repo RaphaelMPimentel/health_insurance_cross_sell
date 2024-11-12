@@ -49,7 +49,9 @@ A performance do modelo foi avaliada utilizando as seguintes métricas:
 A performance do modelo foi traduzida em valores de negócios, priorizando as 2.000 pessoas com maior probabilidade de conversão para serem contactadas pelo time comercial.
 
 **Step 10. Deploy Model to Production:**
-O modelo foi integrado a um sistema que gera uma lista de 2.000 clientes com maior potencial de compra, pronta para ser usada pelo time comercial nas ligações.
+O modelo foi integrado a um script no Google Sheets, que calcula o **Propensity Score** de cada cliente. Com isso, é possível gerar uma lista ordenada dos clientes com maior potencial de compra, facilitando o trabalho do time comercial, que pode utilizá-la diretamente para priorizar as ligações.
+
+![Demonstração do meu projeto](images/health_insurance_sheets.gif)
 
 ### 4. Top 3 Data Insights
 1. **Clientes com idade entre 30 e 50 anos** apresentam maior propensão a comprar o seguro de automóvel.
