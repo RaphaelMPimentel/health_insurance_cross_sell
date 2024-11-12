@@ -36,7 +36,7 @@ A preparação dos dados envolveu a normalização de algumas variáveis, como "
 Foi realizada uma seleção de características com base na relevância das variáveis para o modelo de previsão. As variáveis selecionadas foram: "annual_premium", "vintage", "age", "region_code", "vehicle_damage", "previously_insured" e "policy_sales_channel".
 
 **Step 07. Machine Learning Modelling:**
-O modelo utilizado foi uma **Regressão Linear** para prever a probabilidade de um cliente comprar o seguro de automóvel com base nas características fornecidas. A probabilidade foi convertida em uma pontuação que foi usada para priorizar as ligações comerciais.
+O modelo utilizado foi uma **Regressão Logística** para prever a probabilidade de um cliente comprar o seguro de automóvel com base nas características fornecidas. A probabilidade foi convertida em uma pontuação que foi usada para priorizar as ligações comerciais.
 
 **Step 08. Model Evaluation:**
 A performance do modelo foi avaliada utilizando as seguintes métricas:
