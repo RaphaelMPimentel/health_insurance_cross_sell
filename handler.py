@@ -7,7 +7,7 @@ import os
 from healthinsurance.HealthInsurance import HealthInsurance
 
 # loading model
-model = pickle.load(open('model/model_linear_regression.pkl', 'rb'))
+model = pickle.load(open('model/model_logistic_regression.pkl', 'rb'))
 
 # initialize API
 app = Flask(__name__)
