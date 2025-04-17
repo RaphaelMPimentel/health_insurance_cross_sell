@@ -44,7 +44,7 @@ Empresas de seguros frequentemente enfrentam o desafio de ampliar sua base de pr
 4. **Modelagem e Avaliação**  
    Modelo de **Regressão Logística** treinado com validação por métricas de rankeamento:
    - **Top-K Accuracy Score**
-   - **Lift Curve**, **ROI Curve**
+   - **Lift Curve**, **ROC Curve**
    - **Commutative Curve**
 
 5. **Conversão de Score em Valor de Negócio**  
